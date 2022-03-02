@@ -32,7 +32,8 @@ export const Key = ({
       'transition ease-in-out': isRevealing,
       'bg-slate-200 dark:bg-slate-600 hover:bg-slate-300 active:bg-slate-400 dark:text-white':
         !status,
-      'bg-slate-400 dark:bg-slate-800 text-slate-600 dark:text-slate-600': status === 'absent',
+      'bg-slate-400 dark:bg-slate-800 text-slate-600 dark:text-slate-600':
+        status === 'absent',
       'bg-orange-500 hover:bg-orange-600 active:bg-orange-700 dark:text-white':
         status === 'correct' && isHighContrast,
       'bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 dark:text-white':

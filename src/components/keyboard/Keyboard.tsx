@@ -76,7 +76,6 @@ export const Keyboard = ({
             />
           ))}
         </div>
-        
         <div className="flex flex-row justify-center w-screen">
           <div className="flex flex-col justify-center">
             <div className="flex flex-row mb-1">
@@ -153,7 +152,6 @@ export const Keyboard = ({
             {ENTER}
           </Key>
         </div>
-  
       </div>
     )
   }
