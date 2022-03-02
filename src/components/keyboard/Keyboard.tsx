@@ -60,47 +60,101 @@ export const Keyboard = ({
     }
   }, [onEnter, onDelete, onChar])
 
-  return (
-    <div className="flex flex-flow flex-col fixed bottom-8 sm:-left-1">
-      <div className="flex justify-center mb-1 w-screen">
-        {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'].map((key) => (
-          <Key
-            value={key}
-            key={key}
-            onClick={onClick}
-            status={charStatuses[key]}
-            isRevealing={isRevealing}
-          />
-        ))}
+  console.log(window.screen.availWidth)
+
+  if (window.screen.availWidth > 440) {
+    return (
+      <div className="flex flex-flow flex-col fixed bottom-8 sm:-left-1">
+        <div className="flex justify-center mb-1 w-screen">
+          {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'].map((key) => (
+            <Key
+              value={key}
+              key={key}
+              onClick={onClick}
+              status={charStatuses[key]}
+              isRevealing={isRevealing}
+            />
+          ))}
+        </div>
+        
+        <div className="flex flex-row justify-center w-screen">
+          <div className="flex flex-col justify-center">
+            <div className="flex flex-row mb-1">
+              {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map((key) => (
+                <Key
+                  value={key}
+                  key={key}
+                  onClick={onClick}
+                  status={charStatuses[key]}
+                  isRevealing={isRevealing}
+                />
+              ))}
+            </div>
+            <div className="flex flex-row">
+              {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
+                <Key
+                  value={key}
+                  key={key}
+                  onClick={onClick}
+                  status={charStatuses[key]}
+                  isRevealing={isRevealing}
+                />
+              ))}
+              <Key width={84} value="ENTER" onClick={onClick}>
+                {ENTER}
+              </Key>
+            </div>
+          </div>
+          <Key height={120} value="DELETE" onClick={onClick}>
+            <BackspaceIcon className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white" />
+          </Key>
+        </div>
       </div>
-      <div className="flex justify-center mb-1 w-screen">
-        {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map((key) => (
-          <Key
-            value={key}
-            key={key}
-            onClick={onClick}
-            status={charStatuses[key]}
-            isRevealing={isRevealing}
-          />
-        ))}
-        <Key value="DELETE" onClick={onClick}>
-          <BackspaceIcon className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white" />
-        </Key>
+    )
+  } else {
+    return (
+      <div className="flex flex-flow flex-col fixed bottom-8 sm:-left-1">
+        <div className="flex justify-center mb-1 w-screen">
+          {['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'].map((key) => (
+            <Key
+              value={key}
+              key={key}
+              onClick={onClick}
+              status={charStatuses[key]}
+              isRevealing={isRevealing}
+            />
+          ))}
+        </div>
+        <div className="flex justify-center mb-1 w-screen">
+          {['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map((key) => (
+            <Key
+              value={key}
+              key={key}
+              onClick={onClick}
+              status={charStatuses[key]}
+              isRevealing={isRevealing}
+            />
+          ))}
+          <Key value="DELETE" onClick={onClick}>
+            <BackspaceIcon className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white" />
+          </Key>
+        </div>
+        <div className="flex justify-center w-screen">
+          {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
+            <Key
+              value={key}
+              key={key}
+              onClick={onClick}
+              status={charStatuses[key]}
+              isRevealing={isRevealing}
+            />
+          ))}
+          <Key width={128} value="ENTER" onClick={onClick}>
+            {ENTER}
+          </Key>
+        </div>
+  
       </div>
-      <div className="flex justify-center w-screen">
-        {['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map((key) => (
-          <Key
-            value={key}
-            key={key}
-            onClick={onClick}
-            status={charStatuses[key]}
-            isRevealing={isRevealing}
-          />
-        ))}
-        <Key width={128} value="ENTER" onClick={onClick}>
-          {ENTER}
-        </Key>
-      </div>
-    </div>
-  )
+    )
+  }
 }
