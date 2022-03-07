@@ -120,6 +120,7 @@ export const WORDS_ULT = [
   'tapjump',
   'zdrop',
   'jair',
+  'jablock',
 
   'cape',
   'fludd',

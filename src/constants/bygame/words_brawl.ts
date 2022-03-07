@@ -64,6 +64,7 @@ export const WORDS_BRAWL = [
   'wifi',
   'tapjump',
   'zdrop',
+  'jablock',
 
   'cape',
   'missile',

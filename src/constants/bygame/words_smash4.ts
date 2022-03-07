@@ -83,6 +83,7 @@ export const WORDS_SMASH4 = [
   'glory',
   'zdrop',
   'justsdi',
+  'jablock',
 
   'cape',
   'fludd',
