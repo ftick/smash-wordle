@@ -60,7 +60,7 @@ import {
   setStoredIsUltEnabled,
 } from './lib/localStorage'
 
-import './App.css'
+import './AppInf.css'
 import { AlertContainer } from './components/alerts/AlertContainer'
 import { useAlert } from './context/AlertContext'
 
