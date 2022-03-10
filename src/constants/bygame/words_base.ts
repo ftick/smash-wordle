@@ -157,6 +157,10 @@ export const WORDS_BASE = [
   'special',
   'homerun',
   'carried',
+  'tipper',
+  'juggle',
+  'camping',
+  'camp',
 
   'crouch',
   'shield',

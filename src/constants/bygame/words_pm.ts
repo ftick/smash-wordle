@@ -49,10 +49,13 @@ export const WORDS_PM = [
   'cstick',
   'tapjump',
   'pushoff',
+  'haxdash',
 
   'cape',
   'pkfire',
+  'shorten',
   'wobble',
+  'handoff',
   'desync',
   'iceshot',
   'iceberg',
