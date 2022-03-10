@@ -117,6 +117,7 @@ export const WORDS_MELEE = [
   'unsure',
   'tiopro',
   'levo',
+  'kotc',
 
   'toph',
   'scar',

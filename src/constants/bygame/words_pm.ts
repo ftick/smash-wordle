@@ -119,6 +119,7 @@ export const WORDS_PM = [
   'motobug',
   'wisely',
   'virum',
+  'wombat',
   'pmnexus',
   'bird',
 

@@ -250,6 +250,8 @@ export const WORDS_ULT = [
   'pkbeats',
   'lavish',
   'grinch',
+  'strides',
+  'grinch',
 
   'lurr',
   'wadi',
