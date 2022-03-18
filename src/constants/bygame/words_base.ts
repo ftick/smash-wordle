@@ -206,6 +206,7 @@ export const WORDS_BASE = [
   'mash',
   'masher',
   'smasher',
+  'softhit',
 
   'firefox',
   'inhale',
@@ -249,4 +250,5 @@ export const WORDS_BASE = [
   'kuyachi',
   'randle',
   'grsmash',
+  'drpiggy',
 ]

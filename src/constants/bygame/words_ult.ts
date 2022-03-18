@@ -237,6 +237,8 @@ export const WORDS_ULT = [
   'goml',
   'tojoe',
   'mazer',
+  'cagt',
+  'grayola',
 
   'lyric',
   'virum',
@@ -244,10 +246,8 @@ export const WORDS_ULT = [
   'coney',
   'charles',
   'whydo',
-  'cagt',
-  'grayola',
+  'grsmash',
   'pkbeats',
-  'lavish',
   'grinch',
 
   'lurr',
@@ -339,6 +339,7 @@ export const WORDS_ULT = [
   'dakpo',
   'mabel',
   'wizzy',
+  'lavish',
   'kameme',
   'shuton',
   'cosmos',

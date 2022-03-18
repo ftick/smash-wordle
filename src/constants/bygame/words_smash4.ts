@@ -162,6 +162,7 @@ export const WORDS_SMASH4 = [
   'bear',
   'goml',
   'tojoe',
+  'grsmash',
 
   'lyric',
   'virum',

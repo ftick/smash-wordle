@@ -143,6 +143,7 @@ export const WORDS_MELEE = [
   'beyond',
   'sfatjam',
   'kotc',
+  'suntzu',
 
   'sktar',
   'alukard',
@@ -284,6 +285,7 @@ export const WORDS_MELEE = [
   'jiano',
   'mikeg',
   'eddie',
+  'scorp',
   'lovage',
   'leffen',
   'armada',
